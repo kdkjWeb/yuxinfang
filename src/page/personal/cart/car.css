@@ -1,0 +1,356 @@
+
+
+* {
+  font-size: 14px;
+}
+
+.totalPrice {
+  color: red;
+  /*width: 18%;*/
+  text-align: left;
+  /*border: 1px solid red;*/
+}
+
+.thisPriceC {
+  width: 15%;
+  text-align: left;
+  /*border: 1px solid red;*/
+  color: rgb(253, 136, 0);
+}
+.thisPrice {
+  color: rgb(59, 149, 44);
+}
+
+/*==============================购物车首页=========================*/
+.tab1,.tab2{
+  min-height: 415px;
+  position: relative;
+
+}
+.tab2{
+  padding-bottom: 8%;
+}
+.empt{
+  margin-top: 15%;
+  margin-bottom: 16%;
+}
+/*购物车列表*/
+.shopC {
+  width: 100%;
+  min-height: 470px;
+  /*min-height: 410px;*/
+  /*padding-bottom: 3%;*/
+  border: 1px solid transparent;
+  position: relative;
+}
+
+
+
+
+/*每个店家订单*/
+.top{
+  margin-top: -3%;
+}
+.shopC  .shopBox{
+  margin-bottom: 5%;
+  height: auto;
+  /*border: 3px solid plum;*/
+}
+
+.shopBox>div{
+  /*overflow: hidden;*/
+  /*border: 1px solid red;*/
+  border-bottom: 1px dashed  gainsboro;
+
+}
+/*每个商品的头部信息，包括优惠券*/
+.shopCtitle {
+  text-align: left;
+  width: 95%;
+  height: 30px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 2% 0 0 2%;
+  margin-bottom: -1%;
+ /*background-color: red;*/
+}
+
+
+/*优惠券标题和隐藏区域*/
+
+.yhBox-content{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding-bottom: 3%;
+  /*border-bottom: 1px dashed  gainsboro;*/
+}
+.yhcontent{
+  width: 50%;
+  height:auto;
+  position: absolute;
+  border-radius: 10px;
+  top:80%;
+  right: 0;
+  z-index: 199;
+  background-color: white;
+  box-shadow: 2px 2px 5px #c9c9c9;
+  /*border: 1px solid gainsboro;*/
+  padding: 1%;
+}
+
+/*商品列表显示区*/
+
+/*每组数据的单选框*/
+
+.shopCheckC, .shopGoodsC {
+  display: inline-block;
+}
+
+#shopCtitleR{
+  display: flex;
+  justify-content: space-around;
+}
+/*产品列表*/
+.shopGoodsC {
+  width: 94%;
+  height: 150px;
+  /*border: 1px solid red;*/
+}
+
+
+/*产品左边选框*/
+.shopCheckC {
+ position: relative;
+  top:-70px
+}
+
+/*产品左边图片*/
+.shopLeft, .shopRight {
+  float: left;
+}
+
+.shopLeft {
+  width: 20%;
+  height: 100px;
+  margin-top: 25px;
+}
+
+/*产品右边价格等*/
+
+.shopRight {
+  width: 76%;
+  height: 100px;
+  font-size: 14px;
+  margin-top: 40px;
+  margin-left: 3%;
+}
+
+.shopRight > p {
+  text-align: left;
+  margin-bottom: 4%;
+}
+
+.rightPrice {
+  margin-bottom: 10px;
+  display: flex;
+  line-height: 30px;
+  justify-content: space-between;
+}
+
+
+/*首页总价和数量*/
+
+#btotalNum{
+  position: absolute;
+  bottom:-1%;
+  display: flex;
+  justify-content: space-between;
+}
+.pro{
+  height: 100%;
+
+}
+.pro>div{
+
+}
+
+.totalNum {
+  width: 99.8%;
+  text-align: right;
+  height: 60px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(255, 241, 240);
+}
+
+.totalNum > div {
+  display: flex;
+  width: 200px;
+  /*border: 1px solid black;*/
+  margin-right: 2.5%;
+  float: right;
+  margin-top: 1.5%;
+  justify-content: space-between;
+}
+
+
+
+
+/*==============================结算页============================*/
+
+/*上面金额显示区*/
+.tabTop {
+  width: 97%;
+  display: flex;
+  padding-right: 10%;
+  /*outline: 1px solid red;*/
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+}
+
+.tabtitle {
+  text-align: left;
+  width: 80%;
+  padding: 10px 0;
+  padding-left: 3%;
+}
+
+.backgo {
+  margin-top: 5px;
+}
+
+.shopGoods-top{
+  /*border: 1px solid red;*/
+  display: flex;
+  justify-content: space-between;
+}
+
+/*地址管理*/
+.address-text {
+  width: 95%;
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 3%;
+  position: relative;
+  border-bottom: 1px solid gainsboro;
+}
+
+.address-text p {
+  width: 80%;
+  /*border: 1px solid red;*/
+  margin-bottom: 3%;
+}
+
+.address-text input {
+  border-radius: 5px;
+  padding: 0.5%;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+
+.address-title {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  color: rgb(59, 149, 44);
+}
+.long {
+  width: 85%;
+}
+.address-text>p:nth-of-type(1)  input{
+  width:20%;
+}
+
+.phone {
+  margin-left: 33%;
+}
+
+.save {
+  position: absolute;
+  right: 1%;
+  bottom: 40%;
+}
+
+
+
+/*送货清单，产品列表*/
+
+
+.shopGoods-top{
+  width: 90%;
+  margin:2%  auto;
+   /*border: 1px  solid red;*/
+}
+.shopGoods-content{
+   display: flex;
+  justify-content: start;
+
+}
+.shopGoods-content>div{
+  /*border: 1px  solid red;*/
+  display: flex;
+  width: 60%;
+  padding-left: 5%;
+  line-height: 100px;
+  justify-content: space-between;
+}
+
+.shopGoods-content>p{
+  overflow: hidden;
+  width: 100px;
+  height:80px;
+  font-size: 0;
+  margin-left: 3%;
+  /*border: 1px solid red;*/
+}
+.shopGoods-content>p img{
+    width: 100%;
+     height:100%;
+}
+.shopGoods-title{
+  width: 150px;
+  text-align: left;
+  /*border: 1px solid red;*/
+}
+#shopGoods-price{
+  min-width: 60px;
+  text-align: left;
+  /*border: 1px solid red;*/
+}
+
+
+
+
+/*优惠券显示*/
+
+.yhmony .mytitle {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.yhmony {
+  width: 95%;
+  margin: 0 auto;
+  /*border: 1px solid red;*/
+}
+
+
+/*下面总价*/
+#totalNum {
+  width: 70%;
+
+}
+
+
+
+
+
+
+
+
+
+
